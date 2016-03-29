@@ -22,10 +22,12 @@ var timer;
 var frame = 0;
 
 setInterval(() => {
-  process.stdout.clearLine();
-  process.stdout.cursorTo(0);
-  process.stdout.write(`  ${frames[frame % frames.length]}     loading...`);
-  frame++;
+  if (process.stdout.clearLine) {
+    process.stdout.clearLine();
+    process.stdout.cursorTo(0);
+    process.stdout.write(`  ${frames[frame % frames.length]}     loading...`);
+    frame++;
+  }
 }, 100);
 
 console.log(EOL);
