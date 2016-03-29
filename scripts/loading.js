@@ -22,7 +22,7 @@ var timer;
 var frame = 0;
 
 setInterval(() => {
-  if (process.stdout) {
+  if (process.stdout.clearLine) {
     process.stdout.clearLine();
     process.stdout.cursorTo(0);
     process.stdout.write(`  ${frames[frame % frames.length]}     loading...`);
