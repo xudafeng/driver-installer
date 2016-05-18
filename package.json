@@ -1,7 +1,7 @@
 {
   "name": "node-installer",
-  "version": "1.0.4",
-  "description": "node-installer",
+  "version": "1.0.6",
+  "description": "node installer",
   "keywords": [
     "installer"
   ],
